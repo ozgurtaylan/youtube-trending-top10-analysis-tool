@@ -16,7 +16,7 @@ The goal of this project is to create a tool that will automatically collect dat
 
 ## Project structure
 
-<p align="center"><img src="docs/structure.jpeg" alt="workflow" width="800"/></p>
+<p align="center"><img src="docs/structure.png" alt="workflow" width="800"/></p>
 
 The project workflow follows the structure above.
 
