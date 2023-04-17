@@ -1,0 +1,11 @@
+altair
+pandas
+numpy
+requests
+apache-airflow-client==2.5.1
+google-cloud-bigquery==3.9.0
+matplotlib==3.7.1
+altair-ally==0.1.0
+altair==4.2.2
+db-dtypes==1.1.1
+streamlit
