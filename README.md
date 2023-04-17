@@ -21,7 +21,7 @@ The goal of this project is to create a tool that will automatically collect dat
 The project workflow follows the structure above.
 
 ## Demo
-[**Demo**](https://youtu.be/h5S6eLs7AiQ "channel") video is available on my youtube channel.
+[**Demo**](https://youtu.be/SaCHTM--qbg "channel") video is available on my youtube channel.
   
 ## Explanations
 
@@ -40,7 +40,7 @@ The DAG is named "**youtube_data_pipeline**" and is described as an analysis of 
     * `create_bq_table`: This task **creates a new table in the BigQuery** dataset created by create_bq_dataset()  if it does not already exist..
     * `extract_data`: This task **uses the YouTube API to extract data** on the top 10 trending videos and saves it to a JSON file.
         - Once data obtained it saved into ./data folder in JSON format for future needs. 
-    * `transform_data`: This task **applies some transformation** to the data saved in the JSON file created by extract_data() and saves the transformed data back to the same file.
+    * `transform_data`: This task **applies some transformation** to the data saved in the JSON file created by `extract_data()` and saves the transformed data back to the same file.
     * `load_data_to_bq`: This task **loads the transformed data** from the JSON file created by transform_data() **into the BigQuery** table created by `create_bq_table()`.
 * The tasks are **connected in a linear dependency**, with `create_bq_dataset` >> `create_bq_table` >> `extract_data` >> `transform_data` >> `load_data_to_bq`.
 * When the DAG is triggered, it first runs the `create_bq_dataset` task, which creates a new dataset in BigQuery.
@@ -176,7 +176,7 @@ folders.
 `Pasword: airlfow`
 
 12. **Unpause your dag by changing the state of toggle button.**
-<p align="center"><img src="docs/airflow_toggle.png" alt="workflow" width="800"/></p>
+<p align="center"><img src="docs/airflow_toggle.png" alt="workflow" width="200"/></p>
 
 13. **Got to Streamlit UI**
 - **http://localhost:8081**
